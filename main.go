@@ -4,7 +4,10 @@ import "fmt"
 
 func main() {
 
-	fmt.Println("hola mundo")
+	a := 8
+	b := 0
+
+	fmt.Println(division(a, b))
 
 	/*div, err := division(5, 0)
 	if err != nil {
@@ -13,4 +16,10 @@ func main() {
 	}
 	fmt.Println("Division:", div)*/
 
+}
+
+func division(a int, b int) int {
+	return a / b
+
+	//panic: runtime error: integer divide by zero
 }
