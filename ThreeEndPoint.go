@@ -6,7 +6,6 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
-
 	"strconv"
 
 	"github.com/gorilla/mux"
@@ -36,7 +35,7 @@ func getTasks(w http.ResponseWriter, r *http.Request) {
 func createTasks(w http.ResponseWriter, r *http.Request) {
 	var newTask task
 
-	reqBody, err := ioutil.readAll(r.Body)
+	reqBody, err := ioutil.ReadAll(r.Body)
 	if err != nil {
 		fmt.Fprintf(w, "insert a valid task")
 	}
