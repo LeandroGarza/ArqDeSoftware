@@ -2,7 +2,6 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"https://github.com/emikohmann/arq-software/ej-auth/domain"
 )
 
 func main() {
